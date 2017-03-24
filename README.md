@@ -6,7 +6,7 @@
 
 ## Description
 
-_Program that counts the number of times a word appears in a sentence. The sentence and the word to count are input by the user. The program displays the original sentence and the number of times the word to count appears in the sentence._
+_Program that counts the number of times a word appears in a sentence. The sentence and the word to count are input by the user. The program displays the original sentence and the number of times the word to count appears in the sentence. The program will also display a specific message if a match is not found._
 
 ## Setup/Installation Requirements
 
@@ -15,7 +15,7 @@ _Program that counts the number of times a word appears in a sentence. The sente
 * _Update Class names and Test names as appropriate_
 * _See the composer.json file for project dependencies_
 
-## Specs (include project specs below)
+## Project Specifications
 * _Program takes a word and a word to check for and compares them to see if they are the same. The program will return true if there is a match and false if not._
   * _Example Input: "soccer" and "baseball"_
   * _Example Output: "false"_
@@ -35,6 +35,9 @@ _No known bugs,_
 _If you run into any issues or have questions, ideas or concerns, please contact Rob McKenzie at mckenro@gmail.com_
 
 ## Technologies Used
+* _HTML_
+* _CSS_
+* _PHP_
 * _Bootstrap 3.3.7_
 * _JQuery 3.2.0_
 * _Silex 1.1_
