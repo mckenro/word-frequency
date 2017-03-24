@@ -15,8 +15,9 @@
                   $word_count = $word_count + 1;
               }
             }
-            return $word_count;
-            if ($word_count = 0) {
+            if ($word_count >= 1) {
+              return $word_count;
+            } elseif ($word_count < 1) {
               return $no_match;
             }
         }

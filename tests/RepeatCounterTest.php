@@ -33,6 +33,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_Repeat_NoMatch()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_sentence = "Words make sentences of words";
+            $input_word = "pizza";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_sentence, $input_word);
+
+            //Assert
+            $this->assertEquals("Sorry, that sentence does not contain your count word.", $result);
+        }
+
     }
 
 ?>
