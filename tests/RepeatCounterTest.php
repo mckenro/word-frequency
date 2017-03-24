@@ -5,17 +5,18 @@
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
 
-        function myFunction()
+        function test_Repeat_OneWord()
         {
             //Arrange
-            $test_TitleCaseGenerator = new Class;
-            $input = "beowolf";
+            $test_RepeatCounter = new RepeatCounter;
+            $input_sentence = "This";
+            $input_word = "This";
 
             //Act
-            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+            $result = $test_RepeatCounter->countRepeats($input_sentence, $input_word);
 
             //Assert
-            $this->assertEquals("Beowolf", $result);
+            $this->assertEquals(true, $result);
         }
 
     }
