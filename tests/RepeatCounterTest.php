@@ -19,6 +19,20 @@
             $this->assertEquals(true, $result);
         }
 
+        function test_Repeat_MultiWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_sentence = "Words make sentences of words";
+            $input_word = "words";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_sentence, $input_word);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
     }
 
 ?>
