@@ -1,5 +1,6 @@
 h4 {
-  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 200;
 }
 
 h5 {
@@ -10,7 +11,43 @@ h5 {
   font-weight: 200;
 }
 
+form {
+  margin-bottom: 60px;
+}
+
 .result-span {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 54px;
+  padding:6px;
   font-size: 32px;
   font-style: italic;
+  border-radius: 10px;
+  background: #FFFFAB;
+  color: #337ab7
+}
+
+.count-span {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 54px;
+  padding:6px;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 10px;
+  color: #337ab7
+}
+
+.sentence-span {
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: 200;
+  color: #b8b8b8;
+  border-bottom: 1px solid #d1d1d1;
 }

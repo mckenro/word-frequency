@@ -14,11 +14,11 @@
       <form action="/result" method="post">
         <div class="form-group">
           <label for="input-sentence">Enter a sentence</label>
-          <input name="input-sentence" type="text" class="form-control"></input>
+          <input name="input-sentence" type="text" class="form-control" required></input>
         </div>
         <div class="form-group">
           <label for="input-word">Enter a word to count</label>
-          <input name="input-word" type="text" class="form-control"></input>
+          <input name="input-word" type="text" class="form-control" required></input>
         </div>
         <div class="form-group">
           <button class="btn btn-primary">Count Word Matches!</button>
@@ -26,8 +26,8 @@
       </form>
       {% if count > 0 %}
       <div class="result">
-        <h4>The word <span class="result-span">"{{ wordWord }}"</span> appears <span class="result-span">{{ count }}</span> times in the sentence:</h4>
-        <h4><span class="result-span">{{ finalSentence }}</span></h4>
+        <h4>The word <span class="result-span">"{{ wordWord }}"</span> appears <span class="count-span">{{ count }}</span> times in the sentence:</h4>
+        <h4><span class="sentence-span">{{ finalSentence }}</span></h4>
         <a type="button" class="goback btn btn-default" href="/">Try another word or sentence</a>
       </div>
       {% endif %}

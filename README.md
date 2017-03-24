@@ -6,7 +6,7 @@
 
 ## Description
 
-_Program that counts the number of times a word appears in a sentence. The sentence and the word to count are input by the user. The program displays the original sentence and the number of times the word to count appears in the sentence. The program will also display a specific message if a match is not found._
+_Program that counts the number of times a word appears in a sentence. The sentence and the word to count are input by the user. The program displays the original sentence and the number of times the word to count appears in the sentence. The program will also display a specific message if a match is not found. View the project repository on GitHub here: https://github.com/mckenro/word-frequency_
 
 ## Setup/Installation Requirements
 
