@@ -61,6 +61,20 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_Repeat_NoPunc()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_sentence = "words words, Words!";
+            $input_word = "words";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_sentence, $input_word);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
     }
 
 ?>

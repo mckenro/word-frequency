@@ -5,7 +5,9 @@
         {
             $lower_sentence = strtolower($input_sentence);
             $lower_word = strtolower($input_word);
-            $sentence_array = explode(" ", $lower_sentence);
+            $punctuation_array = array(",","!","#","$","&","*","(",")","-","=","+","<",">","[","]","{","}",":",";","'",'"',".","?","/","~","_","%","|");
+            $no_punc_sentence = str_replace($punctuation_array, " ", $lower_sentence);
+            $sentence_array = explode(" ", $no_punc_sentence);
             $word_count = 0;
             $no_match = "Sorry, that sentence does not contain your count word.";
 
