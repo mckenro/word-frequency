@@ -6,11 +6,36 @@
     <script src="../scripts/scripts.js"></script>
     <link href="../css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-    <title>Project Title</title>
+    <title>Word Counter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Project Title</h1>
+      <h1>Word Counter</h1>
+      <form action="/result" method="post">
+        <div class="form-group">
+          <label for="input-sentence">Enter a sentence</label>
+          <input name="input-sentence" type="text" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <label for="input-word">Enter a word to count</label>
+          <input name="input-word" type="text" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary">Count Word Matches!</button>
+        </div>
+      </form>
+      {% if count > 0 %}
+      <div class="result">
+        <h4>Your word appears {{ count }} times!</h4>
+        <h5 class="goback"><a href="/">Try another word or sentence</a><h5>
+      </div>
+      {% endif %}
+      {% if count < 1 %}
+      <div class="result">
+        <h4>{{ count }}</h4>
+        <h5 class="goback"><a href="/">Try another word or sentence</a><h5>
+      </div>
+      {% endif %}
     </div>
   </body>
 </html>
