@@ -3,10 +3,9 @@
     {
         function countRepeats($input_sentence, $input_word)
         {
-            $punctuation_array = array('.','!','?',';',':',"'",'"','/','(',')','-','=','#','$','%','*','|',);
             $lower_sentence = strtolower($input_sentence);
             $lower_word = strtolower($input_word);
-            $sentence_array = explode(" ", $no_period);
+            $sentence_array = explode(" ", $lower_sentence);
             $word_count = 0;
             $no_match = "Sorry, that sentence does not contain your count word.";
 

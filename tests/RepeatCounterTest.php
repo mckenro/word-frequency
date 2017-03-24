@@ -47,6 +47,20 @@
             $this->assertEquals("Sorry, that sentence does not contain your count word.", $result);
         }
 
+        function test_Repeat_NoCaps()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_sentence = "Words";
+            $input_word = "words";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_sentence, $input_word);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 
 ?>
