@@ -16,8 +16,8 @@
         $input_sentence = $_POST['input-sentence'];
         $input_word = $_POST['input-word'];
         $user_count = new RepeatCounter;
-        return $app['twig']->render('index.html.twig', array('count' => $user_count->countRepeats($input_sentence, $input_word), 'final-word' => $input_word, 'final-sentence' => $input_sentence));
+        $foo = $input_word;
+        return $app['twig']->render('index.html.twig', array('count' => $user_count->countRepeats($input_sentence, $input_word), 'wordWord' => $input_word, 'finalSentence' => ($input_sentence)));
     });
-
     return $app;
  ?>

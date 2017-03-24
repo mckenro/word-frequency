@@ -1,0 +1,16 @@
+h4 {
+  margin-top: 20px;
+}
+
+h5 {
+  margin-top: 30px;
+}
+
+.result {
+  font-weight: 200;
+}
+
+.result-span {
+  font-size: 32px;
+  font-style: italic;
+}

@@ -26,14 +26,15 @@
       </form>
       {% if count > 0 %}
       <div class="result">
-        <h4>Your word appears {{ count }} times!</h4>
-        <h5 class="goback"><a href="/">Try another word or sentence</a><h5>
+        <h4>The word <span class="result-span">"{{ wordWord }}"</span> appears <span class="result-span">{{ count }}</span> times in the sentence:</h4>
+        <h4><span class="result-span">{{ finalSentence }}!</span></h4>
+        <a type="button" class="goback btn btn-default" href="/">Try another word or sentence</a>
       </div>
       {% endif %}
       {% if count < 1 %}
       <div class="result">
         <h4>{{ count }}</h4>
-        <h5 class="goback"><a href="/">Try another word or sentence</a><h5>
+        <a type="button" class="goback btn btn-default" href="/">Try another word or sentence</a>
       </div>
       {% endif %}
     </div>
