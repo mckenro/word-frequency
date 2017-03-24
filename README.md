@@ -17,20 +17,20 @@ _Program that counts the number of times a word appears in a sentence. The sente
 
 ## Project Specifications
 1. Program takes a word and a word to check for and compares them to see if they are the same. The program will return true if there is a match and false if not.
-  * _Example Input: "soccer" and "baseball"_
-  * _Example Output: "false"_
+    * _Example Input: "soccer" and "baseball"_
+    * _Example Output: "false"_
 2. Program will add +1 each time there is a word match. The program will return the number of times there is a match.
-  * _Example Input: "We couldn't find a place to park when we arrived at the park" and "park"_
-  * _Example Output: 2_
+    * _Example Input: "We couldn't find a place to park when we arrived at the park" and "park"_
+    * _Example Output: 2_
 3. Program will output a message if it does not find a match.
-  * _Example Input: "Science is fun." and "pizza"_
-  * _Example Output: "Sorry, you're word did not appear in the sentence provided."_
+    * _Example Input: "Science is fun." and "pizza"_
+    * _Example Output: "Sorry, you're word did not appear in the sentence provided."_
 4. Program will recognize and exclude punctuation and special characters.
-  * _Example Input: "Science is fun."_
-  * _Example Output: "Science is fun"_
+    * _Example Input: "Science is fun."_
+    * _Example Output: "Science is fun"_
 5. Program will remove capital letters prior to comparing words.
-  * _Example Input: "Science is fun."_
-  * _Example Output: "science is fun"_
+    * _Example Input: "Science is fun."_
+    * _Example Output: "science is fun"_
 
 ## Known Bugs
 
