@@ -1,8 +1,8 @@
 <?php
 
-    require_once "src/Class.php";
+    require_once "src/RepeatCounter.php";
 
-    class ClassTest extends PHPUnit_Framework_TestCase
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
 
         function myFunction()

@@ -1,5 +1,5 @@
 <?php
-    class Class
+    class RepeatCounter
     {
         function myFunction()
         {
